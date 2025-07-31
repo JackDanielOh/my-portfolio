@@ -55,7 +55,7 @@ export default function PortfolioLayout({ data }: PortfolioLayoutProps) {
   return (
     <div className="min-h-screen  relative">
       {/* Background Terminal */}
-      <div className="absolute inset-0 z-0 opacity-20">
+      <div className="fixed inset-0 z-0 opacity-20">
         <FaultyTerminal
           scale={1.6}
           gridMul={[2, 1]}
@@ -63,8 +63,8 @@ export default function PortfolioLayout({ data }: PortfolioLayoutProps) {
           timeScale={1}
           pause={false}
           scanlineIntensity={1}
-          glitchAmount={1}
-          flickerAmount={1}
+          glitchAmount={0.8}
+          flickerAmount={0.8}
           noiseAmp={1}
           chromaticAberration={0}
           dither={0}
@@ -73,12 +73,12 @@ export default function PortfolioLayout({ data }: PortfolioLayoutProps) {
           mouseReact={true}
           mouseStrength={0.5}
           pageLoadAnimation={true}
-          brightness={0.9}
+          brightness={0.6}
         />
       </div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative">
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left Sidebar - Profile */}

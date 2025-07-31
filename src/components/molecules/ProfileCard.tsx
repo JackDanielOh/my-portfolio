@@ -24,7 +24,7 @@ export default function ProfileCard({
   contact,
 }: ProfileCardProps) {
   return (
-    <div className="bg-gray-800 rounded-xl shadow-lg p-6 space-y-6">
+    <div className="bg-stone-800/60 backdrop-blur-sm rounded-3xl shadow-lg p-6 space-y-6 cursor-target">
       {/* Avatar and Name */}
       <div className="text-center space-y-4">
         <Avatar src={avatar} alt={name} size="xl" className="mx-auto" />

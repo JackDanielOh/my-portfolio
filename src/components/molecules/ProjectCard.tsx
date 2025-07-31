@@ -18,7 +18,7 @@ export default function ProjectCard({
   githubUrl,
 }: ProjectCardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+    <div className="bg-stone-800/60 backdrop-blur-sm rounded-3xl shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-target">
       <div className="relative h-48">
         <Image
           src={image}
@@ -51,7 +51,7 @@ export default function ProjectCard({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-green-600 text-white text-center py-2 px-4 rounded hover:bg-green-700 transition-colors"
+              className="flex-1 bg-green-600 text-white text-center py-2 px-4 rounded hover:bg-green-700 transition-colors cursor-target"
             >
               Live Demo
             </a>
@@ -61,7 +61,7 @@ export default function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 border border-gray-600 text-gray-300 text-center py-2 px-4 rounded hover:bg-gray-700 transition-colors"
+              className="flex-1 border border-gray-600 text-gray-300 text-center py-2 px-4 rounded hover:bg-gray-700 transition-colors cursor-target"
             >
               View Code
             </a>

@@ -34,7 +34,10 @@ export default function EducationSection({
 
         <div className="space-y-4">
           {education.map((edu, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg shadow-md p-6">
+            <div
+              key={index}
+              className="bg-stone-800/60 backdrop-blur-sm rounded-3xl shadow-md p-6 cursor-target"
+            >
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="text-lg font-semibold text-white">
@@ -67,7 +70,10 @@ export default function EducationSection({
 
         <div className="space-y-4">
           {awards.map((award, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg shadow-md p-6">
+            <div
+              key={index}
+              className="bg-stone-800/60 backdrop-blur-sm rounded-3xl shadow-md p-6 cursor-target"
+            >
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="text-lg font-semibold text-white">
