@@ -1,3 +1,7 @@
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext";
+
 interface Education {
   degree: string;
   institution: string;
@@ -21,15 +25,17 @@ export default function EducationSection({
   education,
   awards,
 }: EducationSectionProps) {
+  const { language: lang } = useLanguage();
+
   return (
     <section className="space-y-8">
       {/* Education */}
       <div className="space-y-6">
         <div>
-          <h2 className="text-2xl font-bold text-white mb-2">Education</h2>
-          <p className="text-gray-300">
-            My academic background and qualifications
-          </p>
+          <h2 className="text-2xl font-bold text-white mb-2">
+            {lang.education.educationHeading}
+          </h2>
+          <p className="text-gray-300">{lang.education.educationDescription}</p>
         </div>
 
         <div className="space-y-4">
@@ -63,9 +69,9 @@ export default function EducationSection({
       <div className="space-y-6">
         <div>
           <h2 className="text-2xl font-bold text-white mb-2">
-            Awards & Certifications
+            {lang.education.awardsHeading}
           </h2>
-          <p className="text-gray-300">Recognition and achievements</p>
+          <p className="text-gray-300">{lang.education.awardsDescription}</p>
         </div>
 
         <div className="space-y-4">

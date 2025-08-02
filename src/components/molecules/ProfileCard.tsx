@@ -1,5 +1,8 @@
+"use client";
+
 import Avatar from "@/components/atoms/Avatar";
 import Badge from "@/components/atoms/Badge";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ProfileCardProps {
   name: string;
@@ -23,6 +26,8 @@ export default function ProfileCard({
   skills,
   contact,
 }: ProfileCardProps) {
+  const { language: lang } = useLanguage();
+
   return (
     <div className="bg-stone-800/60 backdrop-blur-sm rounded-3xl shadow-lg p-6 space-y-6 cursor-target">
       {/* Avatar and Name */}
@@ -42,7 +47,7 @@ export default function ProfileCard({
       {/* Skills */}
       <div>
         <h3 className="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wide">
-          Skills
+          {lang.profile.skillsHeading}
         </h3>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
@@ -56,7 +61,7 @@ export default function ProfileCard({
       {/* Contact */}
       <div>
         <h3 className="text-sm font-semibold text-gray-300 mb-3 uppercase tracking-wide">
-          Contact
+          {lang.profile.contactHeading}
         </h3>
         <div className="space-y-2">
           {contact.email && (
@@ -76,7 +81,7 @@ export default function ProfileCard({
               className="flex items-center text-sm text-gray-300 hover:text-green-400 transition-colors"
             >
               <span className="mr-2">💼</span>
-              LinkedIn
+              {lang.profile.contactLabels.linkedin}
             </a>
           )}
           {contact.github && (
@@ -87,7 +92,7 @@ export default function ProfileCard({
               className="flex items-center text-sm text-gray-300 hover:text-green-400 transition-colors"
             >
               <span className="mr-2">🐙</span>
-              GitHub
+              {lang.profile.contactLabels.github}
             </a>
           )}
           {contact.website && (
@@ -98,7 +103,7 @@ export default function ProfileCard({
               className="flex items-center text-sm text-gray-300 hover:text-green-400 transition-colors"
             >
               <span className="mr-2">🌐</span>
-              Website
+              {lang.profile.contactLabels.website}
             </a>
           )}
         </div>

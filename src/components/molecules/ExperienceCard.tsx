@@ -1,8 +1,15 @@
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext";
+
 interface ExperienceCardProps {
   title: string;
   company: string;
   period: string;
   description: string;
+  highlight1: string;
+  highlight2: string;
+  highlight3: string;
   technologies: string[];
 }
 
@@ -11,8 +18,13 @@ export default function ExperienceCard({
   company,
   period,
   description,
+  highlight1,
+  highlight2,
+  highlight3,
   technologies,
 }: ExperienceCardProps) {
+  const { language: lang } = useLanguage();
+
   return (
     <div className="bg-stone-800/60 backdrop-blur-sm rounded-3xl shadow-md p-6 hover:shadow-lg transition-shadow cursor-target">
       <div className="flex justify-between items-start mb-4">
@@ -20,7 +32,7 @@ export default function ExperienceCard({
           <h3 className="text-lg font-semibold text-white">{title}</h3>
           <p className="text-green-500 font-medium">{company}</p>
         </div>
-        <span className="text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full">
+        <span className="text-sm text-gray-400 bg-gray-700 px-3 py-1 rounded-full">
           {period}
         </span>
       </div>
@@ -31,24 +43,15 @@ export default function ExperienceCard({
       <ul className="text-gray-300 mb-4 space-y-2">
         <li className="flex items-start">
           <span className="text-green-500 mr-2">•</span>
-          <span>
-            Led development of key features resulting in 30% improvement in user
-            engagement
-          </span>
+          <span>{highlight1}</span>
         </li>
         <li className="flex items-start">
           <span className="text-green-500 mr-2">•</span>
-          <span>
-            Collaborated with cross-functional teams to deliver projects on time
-            and within budget
-          </span>
+          <span>{highlight2}</span>
         </li>
         <li className="flex items-start">
           <span className="text-green-500 mr-2">•</span>
-          <span>
-            Implemented best practices and coding standards, reducing bug
-            reports by 25%
-          </span>
+          <span>{highlight3}</span>
         </li>
       </ul>
 
@@ -56,7 +59,7 @@ export default function ExperienceCard({
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className="text-xs bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 px-2 py-1 rounded"
+            className="text-xs bg-green-900 text-green-300 px-2 py-1 rounded"
           >
             {tech}
           </span>

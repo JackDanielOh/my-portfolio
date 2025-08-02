@@ -1,8 +1,11 @@
+"use client";
+
 import ProfileCard from "@/components/molecules/ProfileCard";
 import ExperienceSection from "@/components/organisms/ExperienceSection";
 import ProjectsSection from "@/components/organisms/ProjectsSection";
 import EducationSection from "@/components/organisms/EducationSection";
 import FaultyTerminal from "@/components/backgrounds/FaultyTerminal";
+import LanguageSwitcher from "@/components/atoms/LanguageSwitcher";
 
 interface PortfolioData {
   profile: {
@@ -23,6 +26,9 @@ interface PortfolioData {
     company: string;
     period: string;
     description: string;
+    highlight1: string;
+    highlight2: string;
+    highlight3: string;
     technologies: string[];
   }>;
   projects: Array<{
@@ -30,6 +36,7 @@ interface PortfolioData {
     description: string;
     image: string;
     technologies: string[];
+    year: string;
     liveUrl?: string;
     githubUrl?: string;
   }>;
@@ -54,6 +61,9 @@ interface PortfolioLayoutProps {
 export default function PortfolioLayout({ data }: PortfolioLayoutProps) {
   return (
     <div className="min-h-screen  relative">
+      {/* Language Switcher */}
+      <LanguageSwitcher />
+
       {/* Background Terminal */}
       <div className="fixed inset-0 z-0 opacity-20">
         <FaultyTerminal
@@ -63,8 +73,8 @@ export default function PortfolioLayout({ data }: PortfolioLayoutProps) {
           timeScale={1}
           pause={false}
           scanlineIntensity={1}
-          glitchAmount={0.8}
-          flickerAmount={0.8}
+          glitchAmount={0.7}
+          flickerAmount={0.7}
           noiseAmp={1}
           chromaticAberration={0}
           dither={0}
@@ -73,7 +83,7 @@ export default function PortfolioLayout({ data }: PortfolioLayoutProps) {
           mouseReact={true}
           mouseStrength={0.5}
           pageLoadAnimation={true}
-          brightness={0.6}
+          brightness={0.7}
         />
       </div>
 
