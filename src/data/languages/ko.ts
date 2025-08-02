@@ -1,4 +1,15 @@
 export const ko = {
+  // Site Metadata
+  metadata: {
+    title: "오지성 - QA 및 프론트엔드 개발자 포트폴리오",
+    description:
+      "3년 이상의 경험을 가진 열정적인 SaaS 개발자로, 현대적인 웹 애플리케이션을 구축하는 데 전문성을 가지고 있습니다. React, Node.js, 클라우드 기술에 특화되어 있습니다.",
+    keywords:
+      "QA 엔지니어, 프론트엔드 개발자, React, TypeScript, Node.js, 웹 개발, 포트폴리오, SaaS",
+    author: "오지성",
+    siteName: "오지성 포트폴리오",
+  },
+
   // Navigation and general
   navigation: {
     // Add navigation items when you have them

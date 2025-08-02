@@ -1,4 +1,15 @@
 export const en = {
+  // Site Metadata
+  metadata: {
+    title: "Jiseong Oh - QA & Frontend Developer Portfolio",
+    description:
+      "Passionate SaaS developer with 3+ years of experience building modern web applications. Specialized in React, Node.js, and cloud technologies.",
+    keywords:
+      "QA Engineer, Frontend Developer, React, TypeScript, Node.js, Web Development, Portfolio, SaaS",
+    author: "Jiseong Oh",
+    siteName: "Jiseong Oh Portfolio",
+  },
+
   // Navigation and general
   navigation: {
     // Add navigation items when you have them
