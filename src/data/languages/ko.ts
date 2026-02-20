@@ -41,6 +41,12 @@ export const ko = {
       liveDemo: "방문",
       viewCode: "코드",
     },
+    privateProjectModal: {
+      title: "비공개 저장소",
+      message:
+        "죄송합니다. 이 프로젝트의 저장소는 비공개로 설정되어 있어 확인하실 수 없습니다.",
+      close: "닫기",
+    },
   },
 
   // Education Section
@@ -61,9 +67,9 @@ export const ko = {
   portfolioData: {
     profile: {
       name: "오지성",
-      title: "QA 및 프론트엔드 개발자",
+      title: "Builder & Product Lead",
       avatar: "/images/profile/avatar.webp",
-      bio: "3년 이상의 경험을 가진 열정적인 SaaS 개발자로, 현대적인 웹 애플리케이션을 구축하고 출시하는 데 전문성을 가지고 있습니다. React, Node.js, 클라우드 기술에 특화되어 있습니다.",
+      bio: "메타바(주) 빌더 및 제품 책임자 | 레거시 엔터프라이즈 및 인터넷 인프라를 위한 2세대 Large Action Model (LAM) 구축. AI SaaS 및 에이전트 개발 특화.",
       skills: [
         "React",
         "TypeScript",
@@ -75,9 +81,15 @@ export const ko = {
         "Tailwind CSS",
       ],
       contact: {
-        linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL || "",
-        github: process.env.NEXT_PUBLIC_GITHUB_URL || "",
+        linkedin:
+          process.env.NEXT_PUBLIC_LINKEDIN_URL ||
+          "https://www.linkedin.com/in/jiseongoh/",
+        github:
+          process.env.NEXT_PUBLIC_GITHUB_URL ||
+          "https://github.com/jackdanieloh",
         website: process.env.NEXT_PUBLIC_WEBSITE_URL || "",
+        githubId: "jackdanieloh",
+        linkedinId: "jiseongoh",
       },
     },
     experiences: [

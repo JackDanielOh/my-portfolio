@@ -19,6 +19,8 @@ interface PortfolioData {
       linkedin?: string;
       github?: string;
       website?: string;
+      githubId?: string;
+      linkedinId?: string;
     };
   };
   experiences: Array<{

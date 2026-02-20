@@ -1,9 +1,9 @@
 export const en = {
   // Site Metadata
   metadata: {
-    title: "Jiseong Oh - QA & Frontend Developer Portfolio",
+    title: "Jiseong Oh - Builder & Product Lead Portfolio",
     description:
-      "Passionate SaaS developer with 3+ years of experience building modern web applications. Specialized in React, Node.js, and cloud technologies.",
+      "Builder & Product Lead at Metaba | Architecting 2nd-Gen Large Action Models (LAM) for Legacy Enterprise & Interanet Infra. Specialized in AI SaaS and Actionable Agents.",
     keywords:
       "QA Engineer, Frontend Developer, React, TypeScript, Node.js, Web Development, Portfolio, SaaS",
     author: "Jiseong Oh",
@@ -41,6 +41,12 @@ export const en = {
       liveDemo: "Visit",
       viewCode: "Code",
     },
+    privateProjectModal: {
+      title: "Private repository",
+      message:
+        "Sorry, this project's repository is private and not available to view.",
+      close: "Close",
+    },
   },
 
   // Education Section
@@ -61,9 +67,9 @@ export const en = {
   portfolioData: {
     profile: {
       name: "Jiseong Oh",
-      title: "QA & Frontend Developer",
+      title: "Builder & Product Lead",
       avatar: "/images/profile/avatar.webp",
-      bio: "Passionate SaaS developer with 3+ years of experience building and publishing modern web applications. Specialized in React, Node.js, and cloud technologies.",
+      bio: "Builder & Product Lead at Metaba | Architecting 2nd-Gen Large Action Models (LAM) for Legacy Enterprise & Interanet Infra. Specialized in AI SaaS and Actionable Agents.",
       skills: [
         "React",
         "TypeScript",
@@ -75,9 +81,15 @@ export const en = {
         "Tailwind CSS",
       ],
       contact: {
-        linkedin: process.env.NEXT_PUBLIC_LINKEDIN_URL || "",
-        github: process.env.NEXT_PUBLIC_GITHUB_URL || "",
+        linkedin:
+          process.env.NEXT_PUBLIC_LINKEDIN_URL ||
+          "https://www.linkedin.com/in/jiseongoh/",
+        github:
+          process.env.NEXT_PUBLIC_GITHUB_URL ||
+          "https://github.com/jackdanieloh",
         website: process.env.NEXT_PUBLIC_WEBSITE_URL || "",
+        githubId: "jackdanieloh",
+        linkedinId: "jiseongoh",
       },
     },
     experiences: [
