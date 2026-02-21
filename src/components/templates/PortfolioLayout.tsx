@@ -28,10 +28,17 @@ interface PortfolioData {
     company: string;
     period: string;
     description: string;
-    highlight1: string;
-    highlight2: string;
-    highlight3: string;
-    technologies: string[];
+    highlight1?: string;
+    highlight2?: string;
+    highlight3?: string;
+    technologies?: string[];
+    phases?: Array<{
+      phaseLabel: string;
+      period: string;
+      description: string;
+      highlights: string[];
+      technologies: string[];
+    }>;
   }>;
   projects: Array<{
     title: string;

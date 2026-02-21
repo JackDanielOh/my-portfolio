@@ -94,24 +94,66 @@ export const en = {
     },
     experiences: [
       {
-        title: "QA & Frontend Lead",
+        title: "Founder & Product Lead",
         company: "Metaba Co Ltd",
         period: "March 2024 - Present",
         description:
-          "Lead QA and frontend development for an fullstack AI company, managing technical teams and ensuring platform reliability for thousands of active users.",
-        highlight1:
-          "Managed 5 developers, successfully supporting +3.5k monthly visitors of created online space.",
-        highlight2:
-          "Performed regular QA checks to ensure service stability, data integrity, and UX consistency.",
-        highlight3:
-          "Co-hosted creator campaigns with multiple MCNs, achieving total of 236k+ SNS impressions.",
-        technologies: [
-          "React",
-          "Next.js",
-          "Tailwind CSS",
-          "TypeScript",
-          "VPS",
-          "MongoDB",
+          "Founded and led an AI company through three pivots. From online community tools to AI creator SaaS to B2B LAM agents—building products, teams, and technical foundations at each stage.",
+        phases: [
+          {
+            phaseLabel: "Pivot 2: B2B Enterprise LAM Modal Supplier",
+            period: "2025 Q4 - Present",
+            description:
+              "2nd-generation Large Action Model (LAM) agents specialized in legacy enterprise and intranet infrastructures.",
+            highlights: [
+              "Achieved $7,000 MRR and $120k ARR projection through B2B client contracts in healthcare and telephony sectors.",
+              "Engineered a high-performance LAM model: Pivoted from cloud-based RAG to Private VDS-hosted CAG (Cache-Augmented Generation) to slash latency and ensure data integrity.",
+              "Optimized operational margins by 75% through in-house sLLM deployment and custom validation frameworks for legacy DB orchestration.",
+            ],
+            technologies: [
+              "LAM",
+              "CAG (Cache-Augmented Gen)",
+              "sLLM Optimization",
+              "Private VDS",
+              "Legacy System Orchestration",
+            ],
+          },
+          {
+            phaseLabel:
+              "Pivot 1: All in one AI agentic agent for content creators",
+            period: "2025 Q2 - 2025 Q4",
+            description:
+              "All in one AI agentic agent for content creator, talk to create your own monetization SaaS",
+            highlights: [
+              "Built and deployed a multi-tenant MVP under unique subdomains, establishing the foundation for our current VPS-centric AI infrastructure.",
+              "Validated the demand for automated 'Zero-to-One' tools by onboarding early creator cohorts and streamlining their technical workflows.",
+              "Bridged the gap between NoSQL data structures (MongoDB) and automated link-customization engines.",
+            ],
+            technologies: [
+              "Next.js",
+              "TypeScript",
+              "MongoDB",
+              "Automated VPS Provisioning",
+            ],
+          },
+          {
+            phaseLabel:
+              "Start: Personalized Online Community Platform Creation",
+            period: "2023 Q4 - 2025 Q1 (Foundation)",
+            description:
+              "Why is it so hard to own an personal online community platform? Mark had his own back in 2004.",
+            highlights: [
+              "Demo prototype community release under unique subdomain, achieving +10k MAU",
+              "Collaborated with major MCNs(Sandbox, LolQ) creators to host creator-driven campaigns, +250k SNS impressions.",
+              "Established production-level online community architecture.",
+            ],
+            technologies: [
+              "React",
+              "PostgreSQL",
+              "MCN API Integration",
+              "Infrastructure Scaling",
+            ],
+          },
         ],
       },
       {

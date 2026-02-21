@@ -89,7 +89,7 @@ export default function ProjectCard({
             <button
               type="button"
               onClick={() => setPrivateModalOpen(true)}
-              className="flex-1 border border-gray-600 text-gray-300 text-center py-2 px-4 rounded hover:bg-gray-700 transition-colors cursor-target flex items-center justify-center gap-2"
+              className="flex-1 border border-stone-600 text-green-200 text-center py-2 px-4 rounded hover:border-green-600/50 hover:bg-green-900/40 transition-colors cursor-target flex items-center justify-center gap-2"
             >
               <svg
                 width="16"
@@ -112,7 +112,7 @@ export default function ProjectCard({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 border border-gray-600 text-gray-300 text-center py-2 px-4 rounded hover:bg-gray-700 transition-colors cursor-target flex items-center justify-center gap-2"
+                className="flex-1 border border-stone-600 text-green-200 text-center py-2 px-4 rounded hover:border-green-600/50 hover:bg-green-900/40 transition-colors cursor-target flex items-center justify-center gap-2"
               >
                 <svg
                   width="16"

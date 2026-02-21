@@ -94,24 +94,64 @@ export const ko = {
     },
     experiences: [
       {
-        title: "QA 및 프론트엔드 리드",
+        title: "대표 & 프로덕트 리드",
         company: "메타바 (Metaba Co Ltd)",
         period: "2024년 3월 - 현재",
         description:
-          "풀스택 AI 회사에서 QA 및 프론트엔드 개발을 주도하며, 기술팀을 관리하고 수천 명의 활성 사용자를 위한 플랫폼 안정성을 보장합니다.",
-        highlight1:
-          "5명의 개발자를 관리하며, 생성된 온라인 공간의 월간 방문자 3.5천+ 명을 성공적으로 지원했습니다.",
-        highlight2:
-          "서비스 안정성, 데이터 무결성, UX 일관성을 보장하기 위해 정기적인 QA 검사를 수행했습니다.",
-        highlight3:
-          "여러 MCN과 크리에이터 캠페인을 공동 주최하여 총 236k+ SNS 노출 수를 달성했습니다.",
-        technologies: [
-          "React",
-          "Next.js",
-          "Tailwind CSS",
-          "TypeScript",
-          "VPS",
-          "MongoDB",
+          "세 번의 피벗을 거치며 AI 회사를 설립하고 이끌었습니다. 온라인 커뮤니티 도구에서 AI 크리에이터 SaaS, B2B LAM 에이전트까지—각 단계에서 제품, 팀, 기술 기반을 구축했습니다.",
+        phases: [
+          {
+            phaseLabel: "피벗 2: B2B 엔터프라이즈 LAM 모달 공급",
+            period: "2025 Q4 - 현재",
+            description:
+              "레거시 엔터프라이즈 및 인트라넷 인프라에 특화된 2세대 Large Action Model (LAM) 에이전트.",
+            highlights: [
+              "헬스케어·통신 분야 B2B 클라이언트 계약으로 $7,000 MRR 및 $120k ARR 전망 달성.",
+              "고성능 LAM 모델 구축: 클라우드 기반 RAG에서 Private VDS 호스팅 CAG(Cache-Augmented Generation)로 전환하여 지연 시간 대폭 단축 및 데이터 무결성 확보.",
+              "자체 sLLM 배포 및 레거시 DB 오케스트레이션용 맞춤 검증 프레임워크로 운영 마진 75% 개선.",
+            ],
+            technologies: [
+              "LAM",
+              "CAG (Cache-Augmented Gen)",
+              "sLLM 최적화",
+              "Private VDS",
+              "레거시 시스템 오케스트레이션",
+            ],
+          },
+          {
+            phaseLabel: "피벗 1: 크리에이터를 위한 올인원 AI 에이전틱 에이전트",
+            period: "2025 Q2 - 2025 Q4",
+            description:
+              "크리에이터를 위한 올인원 AI 에이전틱 에이전트. 대화로 나만의 수익화 SaaS를 만드세요.",
+            highlights: [
+              "고유 서브도메인 기반 멀티테넌트 MVP 구축·배포, 현재 VPS 중심 AI 인프라의 기반 마련.",
+              "초기 크리에이터 코호트 온보딩 및 기술 워크플로우 간소화로 '제로투원' 자동화 도구 수요 검증.",
+              "NoSQL 데이터 구조(MongoDB)와 자동 링크 커스터마이징 엔진 간 연동 구축.",
+            ],
+            technologies: [
+              "Next.js",
+              "TypeScript",
+              "MongoDB",
+              "자동 VPS 프로비저닝",
+            ],
+          },
+          {
+            phaseLabel: "시작: 맞춤형 온라인 커뮤니티 플랫폼 생성",
+            period: "2023 Q4 - 2025 Q1 (기반)",
+            description:
+              "왜 개인 온라인 커뮤니티 플랫폼을 갖기가 이렇게 어려울까? 마크는 2004년에 이미 자신만의 것을 갖고 있었다.",
+            highlights: [
+              "고유 서브도메인으로 데모 프로토타입 커뮤니티 출시, +10k MAU 달성.",
+              "메이저 MCN(샌드박스, 롤큐) 크리에이터와 협업해 크리에이터 주도 캠페인 진행, +250k SNS 노출.",
+              "프로덕션 수준 온라인 커뮤니티 아키텍처 구축.",
+            ],
+            technologies: [
+              "React",
+              "PostgreSQL",
+              "MCN API 연동",
+              "인프라 스케일링",
+            ],
+          },
         ],
       },
       {

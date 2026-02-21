@@ -3,15 +3,24 @@
 import ExperienceCard from "@/components/molecules/ExperienceCard";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+interface Phase {
+  phaseLabel: string;
+  period: string;
+  description: string;
+  highlights: string[];
+  technologies: string[];
+}
+
 interface Experience {
   title: string;
   company: string;
   period: string;
   description: string;
-  highlight1: string;
-  highlight2: string;
-  highlight3: string;
-  technologies: string[];
+  highlight1?: string;
+  highlight2?: string;
+  highlight3?: string;
+  technologies?: string[];
+  phases?: Phase[];
 }
 
 interface ExperienceSectionProps {
@@ -44,6 +53,7 @@ export default function ExperienceSection({
             highlight2={experience.highlight2}
             highlight3={experience.highlight3}
             technologies={experience.technologies}
+            phases={experience.phases}
           />
         ))}
       </div>

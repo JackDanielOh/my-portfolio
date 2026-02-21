@@ -53,7 +53,7 @@ export default function EducationSection({
                     {edu.institution}
                   </p>
                 </div>
-                <span className="text-sm text-gray-400 bg-gray-700 px-3 py-1 rounded-full">
+                <span className="text-sm text-green-200 bg-stone-700/80 border border-stone-600/50 px-3 py-1 rounded-full">
                   {edu.period}
                 </span>
               </div>
@@ -87,7 +87,7 @@ export default function EducationSection({
                   </h3>
                   <p className="text-green-500 font-medium">{award.issuer}</p>
                 </div>
-                <span className="text-sm text-gray-400 bg-gray-700 px-3 py-1 rounded-full">
+                <span className="text-sm text-green-200 bg-stone-700/80 border border-stone-600/50 px-3 py-1 rounded-full">
                   {award.date}
                 </span>
               </div>
